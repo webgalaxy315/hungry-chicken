@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Skia;
+  src: url(./assets/fonts/skia/Skia-Regular.ttf);
+}
+
+@font-face {
+  font-family: Alumni;
+  src: url(./assets/fonts/alumni/AlumniSansInlineOne-Regular.ttf);
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-mulish {
+  font-family: 'Mulish', sans-serif;
+}
+
+p {
+  font-family: 'Mulish', sans-serif;
+}
+
+.header {
+
+  .hd-content {
+    font-family:Alumni;
+      font-size: 35px;
+      font-style: italic;
+      text-transform: capitalize;
+      letter-spacing: 0.01em;
+  }
+
+  ul {
+    li {
+      font-family:Alumni;
+      font-size: 35px;
+      font-style: italic;
+      text-transform: capitalize;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  .wallet-btn {
+    border: 3px solid #000000;
+    border-radius: 94px;
+    background-color: white;
+  }
+}
+
+.banner {
+  background: url('../src/assets/images/slogan-background.png') no-repeat;
+  background-size: cover;
+
+  .wallet-btn {
+    border: 6px solid #000000;
+    border-radius: 94px;
+    background-color: white;
+  }
+}
+
+.introduce {
+  position: relative;
+
+  .introduce-left{
+
+    &:before {
+      position: absolute;
+      width: 35%;
+      padding-top: 35%;
+      top: 0;
+      left: 0;
+      background: url(./assets/images/bg-ball.png);
+      background-size: 100% 100%;
+      content: "";
+      z-index: -1;
+    }
+  }
+
+  .introduce-right {
+
+    &:before {
+      position: absolute;
+      width: 35%;
+      padding-top: 35%;
+      bottom: -10%;
+      right: 0;
+      background: url(./assets/images/bg-ball.png);
+      background-size: 100% 100%;
+      content: "";
+      z-index: -1;
+    }
+
+    &:after {
+      position: absolute;
+      width: 10%;
+      padding-top: 10%;
+      bottom: -15%;
+      right: 6%;
+      background: url(./assets/images/int-blue.png);
+      background-size: 100% 100%;
+      content: "";
+      z-index: 0;
+    }
+  }
+}
+
+.roadmap {
+  background-color: #f5f5f5;
+  padding-bottom: 20%;
+  position: relative;
+  z-index: -1;
+
+  &:after {
+    position: absolute;
+    width: 20%;
+    padding-top: 20%;
+    top: -6%;
+    left: 8%;
+    background: url(./assets/images/rm-star.png);
+    background-size: 100% 100%;
+    content: "";
+    z-index: 1;
+  }
+
+  .right {
+
+    &:before {
+      position: absolute;
+      width: 30%;
+      padding-top: 30%;
+      top: 0%;
+      left: 30%;
+      background: url(./assets/images/bg-ball.png);
+      background-size: 100% 100%;
+      content: "";
+      z-index: -1;
+
+      @media (max-width:400px) {
+        width:100%;
+        left: 10%;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      width: 12%;
+      padding-top: 12%;
+      bottom: 50px;
+      left: 10%;
+      background: url(./assets/images/rm-curve.png);
+      background-size: 100% 100%;
+      content: "";
+      z-index: 0;
+    }
+  }
+
+  .left {
+    
+    &:after {
+      position: absolute;
+      width: 80%;
+      padding-top: 100%;
+      bottom: -30%;
+      left: 50%;
+      background: url(./assets/images/bg-ball.png);
+      background-size: 100% 100%;
+      content: "";
+      z-index: -1;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    width: 10%;
+    padding-top: 10%;
+    top: 70%;
+    right: 18%;
+    background: url(./assets/images/int-curve.png);
+    background-size: 100% 100%;
+    content: "";
+    z-index: 1;
+  }
+
+  &:before {
+    position: absolute;
+    width: 35%;
+    padding-top: 35%;
+    top: 40%;
+    right: 18%;
+    background: url(./assets/images/bg-ball.png);
+    background-size: 100% 100%;
+    content: "";
+    z-index: -1;
+  }
+
+  @media(max-width:1300px) {
+    .con-left {
+      display: hidden;
+    }
+  }
+}
+
+.faq {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    width: 35%;
+    padding-top: 35%;
+    top: 0;
+    left: 0;
+    background: url(./assets/images/bg-ball.png);
+    background-size: 100% 100%;
+    content: "";
+    z-index: -1;
+  }
+}
+
+.footer {
+
+  >div:first-child{
+    
+    background: url(../src/assets/images/bg-ball.png);
+    background-size: 350px 300px;
+    padding: 50px 0 130px;
+    align-items: center;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(245 245 245);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@keyframes flow {
+  0%{
+      transform: translate(2000px, -500px) rotate(50deg);
+      display: none;
+  }
+  100% {
+      transform: translate(-300px, 100px) rotate(50deg);
+      display: show;
+  }
+}
+
+.animate-0{
+  animation: flow 15s linear 0ms infinite;
+  z-index: 15
+}
+
+.animate-1{
+  animation: flow 15s linear 1000ms infinite;
+  z-index: 14
+}
+.animate-2{
+  animation: flow 15s linear 2000ms infinite;
+  z-index: 13
+}
+.animate-3{
+  animation: flow 15s linear 3000ms infinite;
+  z-index: 12
+}
+.animate-4{
+  animation: flow 15s linear 4000ms infinite;
+  z-index: 11
+}
+.animate-5{
+  animation: flow 15s linear 5000ms infinite;
+  z-index: 10
+}
+.animate-6{
+  animation: flow 15s linear 6000ms infinite;
+  z-index: 9
+}
+.animate-7{
+  animation: flow 15s linear  7000ms infinite;
+  z-index: 8
+}
+.animate-8{
+  animation: flow 15s linear 8000ms infinite;
+  z-index: 7
+}
+.animate-9{
+  animation: flow 15s linear 9000ms infinite;
+  z-index: 6
+}
+.animate-10{
+  animation: flow 15s linear 10000ms infinite;
+  z-index: 5
+}
+.animate-11{
+  animation: flow 15s linear  11000ms infinite;
+  z-index: 4
+}
+.animate-12{
+  animation: flow 15s linear 12000ms infinite;
+  z-index: 3
+}
+.animate-13{
+  animation: flow 15s linear 13000ms infinite;
+  z-index: 2
+}
+.animate-14{
+  animation: flow 15s linear 14000ms infinite;
+  z-index: 1
+}
+.animate-15{
+  animation: flow 15s linear 15000ms infinite;
+  z-index: 0
+}
+
+
+
