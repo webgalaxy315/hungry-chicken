@@ -100,11 +100,13 @@ function Header() {
 
             <div className="flex items-center">
                 <img
+                    draggable="false"
                     src={TwitterIcon}
                     alt="twitter"
                     className="rounded-full mx-2 w-10 h-10 xl-screen:flex md-screen:flex hidden"
                 />
                 <img
+                    draggable="false"
                     src={LogoIcon}
                     alt="logo"
                     className="rounded-full mx-2 w-10 h-10 xl-screen:flex md-screen:flex hidden"

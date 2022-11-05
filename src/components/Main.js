@@ -83,6 +83,7 @@ function Body() {
             <div className="banner xl-screen:flex lg-screen:flex md-screen:flex block justify-between xl-screen:mx-12 xl-desktop:mx-10 lg-screen:mx-8 md-screen:mx-6 mx-4 mt-10 relative xl-screen:h-[100vh] md-desktop:h-[100vh] md-laptop:h-[90vh] md-tablet:h-[80vh] sm-screen:h-[60vh] sm-desktop:h-[60vh] sm-laptop:h-[45vh] h-[30vh]">
                 <div className="absolute bottom-0 left-0 z-10">
                     <img
+                        draggable="false"
                         src={BannerChicken}
                         alt="banner-chicken"
                         className="xl-screen:w-full xl-desktop:w-[98%] xl-laptop:w-[90%] xl-tablet:w-[85%] lg-screen:w-[80%] lg-desktop:w-[75%] lg-laptop:w-[70%] lg-tablet:w-[65%] md-screen:w-[60%] w-[75%]"
@@ -90,13 +91,18 @@ function Body() {
                 </div>
 
                 <div className="absolute left-[42%] xl-screen:top-[15.5%] lg-screen:top-[15.5%] md-screen:top-[15.5%] top-[5%]">
-                    <img src={BannerTitle} alt="banner-title" />
+                    <img
+                        draggable="false"
+                        src={BannerTitle}
+                        alt="banner-title"
+                    />
                 </div>
 
                 <div className="absolute xl-screen:block md-screen:block hidden bottom-4 right-0 z-0">
                     <div className="banner-content relative">
                         <div className="flex justify-end">
                             <img
+                                draggable="false"
                                 src={BannerContent}
                                 alt="banner-content"
                                 className="xl-screen:w-full xl-desktop:w-[98%] xl-laptop:w-[90%] xl-tablet:w-[85%] lg-screen:w-[80%] lg-desktop:w-[75%] lg-laptop:w-[70%] lg-tablet:w-[65%] md-screen:w-[60%]"
@@ -146,6 +152,7 @@ function Body() {
 
                 <div className="absolute 2xl-screen:left-[40%] left-[37.5%] z-20 xl-screen:-bottom-64 xl-desktop:-bottom-60 xl-laptop:-bottom-56 xl-tablet:-bottom-52 lg-screen:-bottom-48 lg-desktop:-bottom-44 lg-laptop:-bottom-40 md-screen:-bottom-40 md-tablet:-bottom-28 sm-desktop:-bottom-24 sm-laptop:-bottom-16 -bottom-10">
                     <img
+                        draggable="false"
                         src={IntroduceTitle}
                         alt="introduce-title"
                         className="xl-screen:w-full xl-desktop:w-[98%] xl-laptop:w-[90%] xl-tablet:w-[85%] lg-screen:w-[80%] lg-desktop:w-[75%] lg-laptop:w-[70%] lg-tablet:w-[65%] w-[60%]"
@@ -153,7 +160,11 @@ function Body() {
                 </div>
 
                 <div className="absolute -bottom-32 right-10 z-20 xl-screen:block lg-screen:block md-screen:block hidden">
-                    <img src={IntroduceCurve} alt="introduce-title" />
+                    <img
+                        draggable="false"
+                        src={IntroduceCurve}
+                        alt="introduce-title"
+                    />
                 </div>
             </div>
 
@@ -162,10 +173,18 @@ function Body() {
                 className="introduce xl:screen:pt-32 md-screen:pt-32 pt-10 xl-screen:flex lg-screen:flex md-screen:flex block justify-center xl-screen:px-16 md-screen:px-16 px-2"
             >
                 <div className="introduce-left flex items-center xl-screen:flex md-screen:flex hidden">
-                    <img src={IntroduceLeft} alt="introduce-left" />
+                    <img
+                        draggable="false"
+                        src={IntroduceLeft}
+                        alt="introduce-left"
+                    />
                 </div>
                 <div className="introduce-right flex justify-center items-center">
-                    <img src={IntroduceRight} alt="introduce-right" />
+                    <img
+                        draggable="false"
+                        src={IntroduceRight}
+                        alt="introduce-right"
+                    />
                 </div>
             </div>
 
@@ -175,11 +194,13 @@ function Body() {
             >
                 <div className="relative left">
                     <img
+                        draggable="false"
                         src={RoadmapLeft}
                         alt="roadmap-left"
                         className="w-full"
                     />
                     <img
+                        draggable="false"
                         src={RoadmapGroup}
                         alt="Roadmap-Group"
                         className="w-full absolute left-[56%] -bottom-[24%] z-50 xl-screen:block md-screen:block hidden"
@@ -187,6 +208,7 @@ function Body() {
                 </div>
                 <div className="right">
                     <img
+                        draggable="false"
                         src={RoadmapRight}
                         alt="roadmap-left"
                         className="w-full"
@@ -200,21 +222,25 @@ function Body() {
             >
                 <div className="relative">
                     <img
+                        draggable="false"
                         src={ContractLeft1}
                         alt="ContractLeft1"
                         className="con-left z-0"
                     />
                     <img
+                        draggable="false"
                         src={ContractLeft2}
                         alt="ContractLeft2"
                         className="con-left absolute bottom-0 left-0 z-20"
                     />
                     <img
+                        draggable="false"
                         src={ContractRight}
                         alt="ContractRight"
                         className="absolute top-10 -right-[10%]"
                     />
                     <img
+                        draggable="false"
                         src={ContactGroup}
                         alt="ContractRight"
                         className="absolute top-10 -left-[5%] z-10 w-[60%] xl-screen:w-[40%] left-[10%]"
@@ -223,6 +249,7 @@ function Body() {
                 <div className="absolute top-0 -left-[200px] w-full h-[10%]">
                     {chickenList.map((ele, ind) => (
                         <img
+                            draggable="false"
                             src={ChickenNFTGroup[0]}
                             alt="asdf"
                             className={`absolute animate-${ind}`}
@@ -233,8 +260,9 @@ function Body() {
             </div>
 
             <div id="faq" className="faq flex justify-center relative">
-                <img src={FaqContent} alt="FaqContent" />
+                <img draggable="false" src={FaqContent} alt="FaqContent" />
                 <img
+                    draggable="false"
                     src={FooterGiggle}
                     alt="FooterGiggle"
                     className="absolute right-[40%] -bottom-[10%] xl-screen:block w-[25%]"
@@ -246,13 +274,19 @@ function Body() {
                     <Marquee className="flex" direction="left" speed="30">
                         {ChickenNFTGroup.map((i, k) => (
                             <div key={k} className="px-2">
-                                <img key={k} src={i} alt={`nft${k}`} />
+                                <img
+                                    draggable="false"
+                                    key={k}
+                                    src={i}
+                                    alt={`nft${k}`}
+                                />
                             </div>
                         ))}
                     </Marquee>
                 </div>
                 <div className="">
                     <img
+                        draggable="false"
                         src={FooterRect}
                         alt="footerrect"
                         className="h-[50px] w-full"
